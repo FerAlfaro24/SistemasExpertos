@@ -20,12 +20,10 @@ Actividad de introducción a Sistemas Expertos e Inteligencia Artificial. Valor:
 
 ## Archivos entregados
 
-| Archivo | Descripción |
-|---------|-------------|
-| `readme.md` | Este archivo — datos del estudiante y descripción |
-| `definiciones.pdf` | Punto 2: definiciones de inteligencia, IA y sistema experto; reporte de películas; resumen de lectura |
-| `presentacion-se.pptx` | Punto 4: presentación de conceptos principales de Sistemas Expertos |
-| `guion-video.md` | Punto 5: guion del video + liga a YouTube |
-| `resumenes-pdf.md` | Punto 7: resúmenes de los PDFs asignados |
-
-**Punto 6 — Artículo Overleaf:** [Liga al artículo](https://www.overleaf.com/) *(actualizar con liga real al subir)*
+| Archivo | Entregable | Descripción |
+|---------|-----------|-------------|
+| `readme.md` | #1 | Datos del estudiante y descripción de archivos |
+| `Actividad1-221204.pdf` | #2 | Punto 2: 3 definiciones de inteligencia, 3 de IA, mapa mental, reporte de películas (Piso 13 y Código Enigma), resumen de El Mono Desnudo, presentación de videos, respuestas cuestionario 1.0.2 |
+| `presentacion-se.pdf` | #3 | Punto 4: presentación de conceptos principales de Sistemas Expertos (PDF) |
+| `presentacion-se.pptx` | #3 | Punto 4: presentación de Sistemas Expertos (fuente editable) |
+| `guion-video.md` |
