@@ -1,0 +1,111 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{setspace}
+\onehalfspacing
+
+\title{\textbf{Estado del Arte de la Inteligencia Artificial}}
+\author{Fernando Alfaro Montalvo\\
+\small Matrícula: 221204\\
+\small Programación Avanzada (IA)\\
+\small Profesor: Alejandro Flores}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+La Inteligencia Artificial (IA) ha experimentado una transformación radical en la última década, pasando de sistemas basados en reglas explícitas a modelos de aprendizaje profundo capaces de superar el rendimiento humano en tareas específicas. Este artículo presenta un panorama del estado actual de la IA, abarcando sus principales paradigmas, avances recientes, aplicaciones destacadas y desafíos pendientes. Se analizan los modelos de lenguaje de gran escala (LLMs), la visión por computadora, los sistemas de razonamiento y las implicaciones éticas de su adopción masiva.
+\end{abstract}
+
+\section{Introducción}
+
+La Inteligencia Artificial es la disciplina de la computación que busca reproducir capacidades cognitivas humanas en máquinas, incluyendo el razonamiento, el aprendizaje, la percepción y la toma de decisiones \cite{russell2020}. Sus orígenes se remontan a 1950, cuando Alan Turing publicó \textit{Computing Machinery and Intelligence}, proponiendo el célebre "Test de Turing" como criterio para evaluar la inteligencia de una máquina \cite{turing1950}.
+
+Hoy, la IA ha dejado de ser un campo académico para convertirse en una tecnología transversal que impacta industrias, gobiernos y la vida cotidiana de millones de personas. El surgimiento de los grandes modelos de lenguaje como GPT-4, Gemini y Claude marca un punto de inflexión histórico en el desarrollo de la inteligencia artificial general.
+
+\section{Principales Paradigmas}
+
+\subsection{Sistemas Expertos y Razonamiento Simbólico}
+Los sistemas expertos, desarrollados ampliamente en las décadas de 1970-1990, representaron la primera ola de aplicaciones exitosas de la IA \cite{feigenbaum1983}. Basados en reglas \textit{si-entonces} y motores de inferencia, sistemas como MYCIN (diagnóstico médico) y XCON (configuración de hardware) demostraron que el conocimiento experto podía codificarse y automatizarse. Aunque fueron superados por el aprendizaje automático en muchas tareas, siguen vigentes en dominios donde la explicabilidad es crítica.
+
+\subsection{Aprendizaje Automático}
+El aprendizaje automático (Machine Learning, ML) permite a las máquinas aprender patrones a partir de datos sin ser programadas explícitamente. Sus tres paradigmas fundamentales son:
+\begin{itemize}
+    \item \textbf{Aprendizaje supervisado:} el modelo aprende de ejemplos etiquetados (clasificación, regresión).
+    \item \textbf{Aprendizaje no supervisado:} el modelo descubre estructura en datos sin etiquetas (clustering, reducción de dimensionalidad).
+    \item \textbf{Aprendizaje por refuerzo:} el modelo aprende mediante prueba y error, maximizando una recompensa acumulada.
+\end{itemize}
+
+\subsection{Aprendizaje Profundo}
+El aprendizaje profundo (Deep Learning) es una subdisciplina del ML basada en redes neuronales artificiales con múltiples capas. Impulsado por la disponibilidad de grandes conjuntos de datos y el poder computacional de las GPUs, ha logrado avances sin precedentes en visión por computadora, procesamiento de lenguaje natural y síntesis de voz \cite{lecun2015}.
+
+\section{Avances Recientes}
+
+\subsection{Modelos de Lenguaje de Gran Escala (LLMs)}
+Los LLMs como GPT-4 (OpenAI), Gemini (Google) y Claude (Anthropic) representan el avance más significativo de los últimos años. Entrenados sobre billones de tokens de texto mediante la arquitectura Transformer \cite{vaswani2017}, son capaces de generar texto coherente, razonar sobre problemas matemáticos, escribir código y mantener conversaciones complejas. En 2024-2025 se observó una aceleración notable con modelos que exhiben capacidades de razonamiento de varios pasos (\textit{chain-of-thought reasoning}).
+
+\subsection{IA Generativa}
+La IA generativa, que incluye modelos de texto, imagen, audio y video, ha democratizado la creación de contenido. Herramientas como DALL-E, Stable Diffusion y Sora (OpenAI) permiten generar imágenes y videos fotorrealistas a partir de descripciones en lenguaje natural, planteando importantes preguntas sobre derechos de autor y autenticidad.
+
+\subsection{Agentes Autónomos}
+Los agentes de IA son sistemas capaces de percibir su entorno, planificar y ejecutar acciones de forma autónoma para lograr objetivos. Herramientas como AutoGPT y sistemas basados en el Claude Agent SDK representan una nueva frontera donde la IA no solo responde preguntas sino que ejecuta tareas multi-paso en el mundo digital.
+
+\section{Aplicaciones Destacadas}
+
+La IA tiene aplicaciones en prácticamente todos los sectores:
+
+\begin{itemize}
+    \item \textbf{Salud:} diagnóstico por imagen (detección de cáncer), descubrimiento de fármacos (AlphaFold para predicción de proteínas), asistentes de diagnóstico clínico.
+    \item \textbf{Educación:} tutores inteligentes, sistemas de evaluación automatizada, generación de contenido personalizado.
+    \item \textbf{Industria:} mantenimiento predictivo, control de calidad por visión computacional, optimización de cadenas de suministro.
+    \item \textbf{Seguridad:} detección de fraudes, ciberseguridad, reconocimiento facial.
+    \item \textbf{Transporte:} vehículos autónomos, optimización de rutas, gestión de tráfico.
+\end{itemize}
+
+\section{Desafíos y Consideraciones Éticas}
+
+A pesar de los avances, la IA enfrenta desafíos significativos:
+
+\textbf{Explicabilidad:} los modelos de aprendizaje profundo son cajas negras difíciles de interpretar. En aplicaciones críticas (medicina, justicia) es imprescindible que el sistema pueda justificar sus decisiones.
+
+\textbf{Sesgos algorítmicos:} los modelos aprenden los sesgos presentes en los datos de entrenamiento, lo que puede derivar en discriminación sistémica.
+
+\textbf{Impacto laboral:} la automatización de tareas cognitivas amenaza con desplazar empleos en sectores como contabilidad, diseño gráfico y atención al cliente.
+
+\textbf{Seguridad y alineación:} garantizar que los sistemas de IA actúen conforme a los valores humanos (\textit{AI alignment}) es uno de los problemas abiertos más importantes de la investigación actual.
+
+\textbf{Regulación:} la Unión Europea aprobó en 2024 el \textit{AI Act}, la primera regulación integral de IA del mundo, que clasifica los sistemas por nivel de riesgo y establece obligaciones para sus desarrolladores.
+
+\section{Conclusión}
+
+La Inteligencia Artificial se encuentra en un momento de transformación acelerada. Los modelos de lenguaje de gran escala, la IA generativa y los agentes autónomos están redefiniendo lo que las máquinas pueden hacer. Sin embargo, este avance trae consigo responsabilidades: garantizar que la IA sea explicable, justa, segura y alineada con los valores humanos es tan importante como mejorar su desempeño técnico.
+
+El futuro de la IA no depende solo de ingenieros y científicos, sino de una conversación multidisciplinaria que incluya ética, política, educación y sociedad en su conjunto.
+
+\begin{thebibliography}{9}
+
+\bibitem{russell2020}
+Russell, S. y Norvig, P. (2020). \textit{Artificial Intelligence: A Modern Approach} (4ª ed.). Pearson.
+
+\bibitem{turing1950}
+Turing, A. M. (1950). Computing Machinery and Intelligence. \textit{Mind}, 59(236), 433–460.
+
+\bibitem{feigenbaum1983}
+Feigenbaum, E. A. y McCorduck, P. (1983). \textit{The Fifth Generation}. Addison-Wesley.
+
+\bibitem{lecun2015}
+LeCun, Y., Bengio, Y. y Hinton, G. (2015). Deep Learning. \textit{Nature}, 521, 436–444.
+
+\bibitem{vaswani2017}
+Vaswani, A. et al. (2017). Attention Is All You Need. \textit{Advances in Neural Information Processing Systems}, 30.
+
+\end{thebibliography}
+
+\end{document}
